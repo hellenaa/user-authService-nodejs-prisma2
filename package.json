@@ -1,0 +1,27 @@
+{
+  "name": "lifepack-prisma2-user-micro",
+  "version": "1.0.0",
+  "description": "This example shows how to use [Photon.js](https://photonjs.prisma.io/) in a **simple Node.js script** to read and write data in a database.",
+  "main": "script.js",
+  "dependencies": {
+    "@prisma/client": "^2.0.0-preview020.3",
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.1",
+    "ioredis": "^4.14.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "path": "^0.12.7",
+    "prisma2": "^2.0.0-preview020.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

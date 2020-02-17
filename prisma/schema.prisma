@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgreadmin:513015@192.168.2.204:5432/lifepack_prisma2?schema=userSchema"
+}
+
+model user {
+  GUID  String    @id  @default(uuid())
+  email String   @unique
+  password String
+  firstName String?
+  lastName String?
+  role String  @default("USER")
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+enum Role {
+    USER
+    ADMIN
+}
